@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+            <link rel="stylesheet" href="/styles/loginpage.css"/>
+            <link rel="stylesheet" href="/styles/w3.css"/>
+            <title>Join | Car-Fix</title>
+           
+    </head>
+
+    <body class="centered-form"> 
+        
+       <div class="centered-form__form">
+            <div id="logo" class="w3-center w3-container w3-padding">
+                    
+            </div>
+            <form method="POST" action="/customer/signup" >
+                <div class="form-field">
+                    <h3>Customer-Sign-Up</h3>
+                </div>
+                <div class="form-field">
+                    <label>Email</label>
+                    <input type="email" name="email" autofocus autocomplete="off" required/>
+                </div>
+                <div class="form-field">
+                    <label>Password</label>
+                    <input type="password"  name="pass" autocomplete="off" required minlength="6"/>
+                </div>
+                <div class="form-field">
+                    <button >Sign up</button>
+                </div>
+            </form>
+            <form method="POST" action="/vendor/signup" >
+                <div class="form-field">
+                    <h3>Vendor-Sign-Up</h3>
+                </div>
+                <div class="form-field">
+                    <label>Email</label>
+                    <input type="email" name="email" autofocus autocomplete="off" required/>
+                </div>
+                <div class="form-field">
+                    <label>Password</label>
+                    <input type="password"  name="pass" autocomplete="off" required minlength="6"/>
+                </div>
+                <div class="form-field">
+                    <button >Sign up</button>
+                </div>
+            </form>
+            <form id="login-form" method="POST" action="/customer/login">
+                <div class="form-field">
+                    <h3>Customer-Login</h3>
+                </div>
+                <div class="form-field">
+                    <label>Email</label>
+                    <input type="email" name="email" autofocus autocomplete="off" required/>
+                </div>
+                <div class="form-field">
+                    <label>Password</label>
+                    <input type="password"  name="pass" autocomplete="off" required minlength="6"/>
+                </div>
+                <div class="form-field">
+                    <button >Log In</button>
+                </div>
+            </form>
+            <form id="login-form" method="POST" action="/vendor/login">
+                <div class="form-field">
+                    <h3>Vendor-Login</h3>
+                </div>
+                <div class="form-field">
+                    <label>Email</label>
+                    <input type="email" name="email" autofocus autocomplete="off" required/>
+                </div>
+                <div class="form-field">
+                    <label>Password</label>
+                    <input type="password"  name="pass" autocomplete="off" required minlength="6"/>
+                </div>
+                <div class="form-field">
+                    <button >Log In</button>
+                </div>
+            </form>
+       </div>
+
+    </body>
+</html>
